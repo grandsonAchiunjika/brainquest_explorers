@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'language_lagoon.dart';
 import 'math_world.dart';
 import 'science_isles.dart';
 
@@ -42,7 +43,10 @@ class HomeScreen extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Navigate to Wordtopia
+                 Navigator.push(
+                  context,
+                   MaterialPageRoute(builder: (context) => LanguageLagoon()),
+                  );  // Navigate to Wordtopia
               },
               child: Text('Explore Wordtopia'),
             ),
