@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'math_world.dart';
+import 'science_isles.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -31,7 +32,10 @@ class HomeScreen extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Navigate to Science Isles
+                 Navigator.push(
+                  context,
+                   MaterialPageRoute(builder: (context) => ScienceIsles()),
+                 );// Navigate to Science Isles
               },
               child: Text('Visit Science Isles'),
             ),
